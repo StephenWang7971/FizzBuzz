@@ -11,7 +11,7 @@ public class FizzBuzz {
             values.add(i);
         }
 
-        values.stream().mapMulti(new FizzBuzzFunction()).forEach(System.out::println);
+        values.stream().map(new FizzBuzzFunction()).forEach(System.out::println);
     }
     public static void main(String[] args) {
         FizzBuzz.run();
